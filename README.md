@@ -44,5 +44,5 @@ Thanks for your attention.
 
 we are open source. we are nois3.
 
-nois3.it
-@wearenois3
+* nois3.it
+* @wearenois3
