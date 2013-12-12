@@ -1,13 +1,30 @@
-var WF_URL = 'PLEASE FILL IT WITH YOUR API ADDRESS FROM WordPress JSON API';
 /**
 
+If you've already set up a Wordpress instance, with JSON API plugin activated 
+you just have to put in WF_URL you're complete address to reach it
+
+e.g.:
+
+var WF_URL = 'http://www.example.com/api/';
 
 **/
-var WF_PRJ = 'PLEASE FILL IT WITH THE CORRECT CATEGORY SLUG FOR YOUR PROJECT';
+var WF_URL = 'http://www.example.com/api/';
+
 /**
+  
+The way the whole thing is managed right now is that in the wordpress instance 
+we're managing more than one project for Wireframes, so we're using categories
+to address one particular project.
 
+This way I'm defining WF_PRJ as the category_slug for the project.
+
+e.g.:
+
+var WF_URL = 'project_wf'
 
 **/
+var WF_PRJ = 'project_wf';
+
 var wf = {
   init: function() {
     $('<ol class="joyride-list" data-joyride>').appendTo('body');
