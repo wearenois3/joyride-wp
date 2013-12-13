@@ -14,10 +14,10 @@ So if you've already set up a Wordpress instance, with JSON API plugin (http://w
 you just have to put in WF_URL you're complete address to reach it
 
 e.g.:
-
+```js
 var WF_URL = 'http://www.example.com/api/';
+```
 
-  
 The way the whole thing is managed right now is that in the wordpress instance 
 we're managing more than one project for Wireframes, so we're using categories
 to address one particular project.
@@ -25,8 +25,9 @@ to address one particular project.
 This way I'm defining WF_PRJ as the category_slug for the project.
 
 e.g.:
-
+```js
 var WF_URL = 'project_wf'
+```
 
 We're using custom post types here, you can add them through a very basic functions.php 
 piece of code on the theme or with some magic plugin.
