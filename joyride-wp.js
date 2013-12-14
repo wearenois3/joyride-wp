@@ -13,7 +13,11 @@ var wf = {
 
     **/
     var WF_URL = 'http://www.example.com/api/';
+    /**
+    Define your own custom post type name
+    **/
 
+    var WF_CPT = 'joyride';
     /**
       
     The way the whole thing is managed right now is that in the wordpress instance 
@@ -91,7 +95,7 @@ wf.getCategoryPosts(
   function (data) {
     wf.parseJoyride(data);
   },
-  'joyride',
+  WF_CPT,
   WF_PRJ
 );
 
